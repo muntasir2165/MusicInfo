@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="colorPrimary">#3F51B5</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Background color for the top tracks listing -->
+    <color name="track_listing">#FD8E09</color>
+
+    <!-- Background color for the top artists listing -->
+    <color name="artist_listing">#379237</color>
+
+    <!-- Background color for the top tags listing -->
+    <color name="tag_listing">#8800A0</color>
+</resources>

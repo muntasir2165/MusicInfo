@@ -1,0 +1,13 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">MusicInfo</string>
+
+    <!-- Category name for tracks [CHAR LIMIT=20] -->
+    <string name="top_tracks">Top Tracks</string>
+
+    <!-- Category name for artists [CHAR LIMIT=20] -->
+    <string name="top_artists">Top Artists</string>
+
+    <!-- Category name for tags [CHAR LIMIT=20] -->
+    <string name="top_tags">Top Tags</string>
+</resources>
