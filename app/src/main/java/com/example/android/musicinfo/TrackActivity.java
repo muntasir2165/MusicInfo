@@ -133,9 +133,11 @@ public class TrackActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                     // Get the {@link Track} object at the given position the user clicked on
                     Track track = trackList.get(position);
-                    String trackUrl = track.getTrackName() + " " + track.getArtistName();
+                    //create a search term by concatenating the track and artist name to search in
+                    //Youtube
+                    String trackSearchTerm = track.getTrackName() + " " + track.getArtistName();
 
-                    new YoutubeVideoIdTask(TrackActivity.this, trackUrl).execute();
+                    new YoutubeVideoIdTask(TrackActivity.this, trackSearchTerm).execute();
 
 
                 }
