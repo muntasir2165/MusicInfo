@@ -8,12 +8,12 @@ public class Artist {
 
     private String mArtistName;
     private String mArtistUrl;
-    private String mImageUrl;
+    private String mArtistImageUrl;
 
-    public Artist(String artistName, String artistUrl, String imageUrl) {
+    public Artist(String artistName, String artistUrl, String artistImageUrl) {
         this.mArtistName = artistName;
         this.mArtistUrl = artistUrl;
-        this.mImageUrl = imageUrl;
+        this.mArtistImageUrl = artistImageUrl;
     }
 
     public String getArtistName() {
@@ -25,7 +25,7 @@ public class Artist {
     }
 
     public String getImageUrl() {
-        return mImageUrl;
+        return mArtistImageUrl;
     }
 
     @Override
@@ -33,7 +33,7 @@ public class Artist {
         return "Artist{" +
                 "mArtistName='" + mArtistName + '\'' +
                 ", mArtistUrl='" + mArtistUrl + '\'' +
-                ", mImageUrl='" + mImageUrl + '\'' +
+                ", mArtistImageUrl='" + mArtistImageUrl + '\'' +
                 '}';
     }
 

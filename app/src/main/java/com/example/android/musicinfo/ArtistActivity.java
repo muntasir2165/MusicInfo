@@ -73,10 +73,10 @@ public class ArtistActivity extends AppCompatActivity {
                         String artistName = currentArtistItem.getString("name");
                         String artistUrl = currentArtistItem.getString("url");
                         //the image JSON array at index 2 contains the url to a large size artist image
-                        String imageUrl = ((currentArtistItem.getJSONArray("image")).getJSONObject(2).getString("#text"));
+                        String artistImageUrl = ((currentArtistItem.getJSONArray("image")).getJSONObject(2).getString("#text"));
 
                         //create an artist object with the parsed data
-                        Artist artistObject = new Artist(artistName, artistUrl, imageUrl);
+                        Artist artistObject = new Artist(artistName, artistUrl, artistImageUrl);
 
                         // adding an artist to our artist list
                         artistList.add(artistObject);

@@ -74,11 +74,11 @@ public class TrackActivity extends AppCompatActivity {
                         JSONObject currentTrackItem = track.getJSONObject(i);
                         String trackName = currentTrackItem.getString("name");
                         String artistName = (currentTrackItem.getJSONObject("artist")).getString("name");
-                        //the image JSON array at index 2 contains the url to a large size track image
-                        String imageUrl = ((currentTrackItem.getJSONArray("image")).getJSONObject(2).getString("#text"));
+                        //the image JSON array at index 2 contains the url to a large size artist image
+                        String artistImageUrl = ((currentTrackItem.getJSONArray("image")).getJSONObject(2).getString("#text"));
 
                         //create a track object with the parsed data
-                        Track trackObject = new Track(trackName, artistName, imageUrl);
+                        Track trackObject = new Track(trackName, artistName, artistImageUrl);
 
                         // adding a track to our track list
                         trackList.add(trackObject);

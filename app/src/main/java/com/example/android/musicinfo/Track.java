@@ -8,13 +8,13 @@ public class Track {
 
     private String mTrackName;
     private String mArtistName;
-    private String mImageUrl;
+    private String mArtistImageUrl;
 
 
-    public Track(String trackName, String artistName, String imageUrl) {
+    public Track(String trackName, String artistName, String artistImageUrl) {
         this.mTrackName = trackName;
         this.mArtistName = artistName;
-        this.mImageUrl = imageUrl;
+        this.mArtistImageUrl = artistImageUrl;
     }
 
     public String getTrackName() {
@@ -26,7 +26,7 @@ public class Track {
     }
 
     public String getImageUrl() {
-        return mImageUrl;
+        return mArtistImageUrl;
     }
 
     @Override
@@ -34,7 +34,7 @@ public class Track {
         return "Track{" +
                 "mTrackName='" + mTrackName + '\'' +
                 ", mArtistName='" + mArtistName + '\'' +
-                ", mImageUrl='" + mImageUrl + '\'' +
+                ", mArtistImageUrl='" + mArtistImageUrl + '\'' +
                 '}';
     }
 }

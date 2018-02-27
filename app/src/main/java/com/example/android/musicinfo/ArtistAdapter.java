@@ -61,12 +61,12 @@ public class ArtistAdapter extends ArrayAdapter<Artist> {
         // Get the {@link Artist} object located at this position in the list
         Artist currentArtist = getItem(position);
 
-        // Find the TextView in the artist_item.xml layout with the ID artist_name_view.
-        TextView trackNameTextView = (TextView) listItemView.findViewById(R.id.artist_name_view);
+        // Find the TextView in the artist_item.xml layout with the ID artist_name_text_view.
+        TextView trackNameTextView = (TextView) listItemView.findViewById(R.id.artist_name_text_view);
         trackNameTextView.setText(currentArtist.getArtistName());
 
-        // Find the ImageView in the list_item.xml layout with the ID image.
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        // Find the ImageView in the list_item.xml layout with the ID artist_image_view.
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.artist_image_view);
         // Download and display the image based on the resource ID
         new DownloadImageTask(imageView).execute(currentArtist.getImageUrl());
         // Make sure the view is visible

@@ -21,7 +21,7 @@
     android:minHeight="@dimen/list_item_height">
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/artist_image_view"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height" />
 
@@ -32,13 +32,13 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/image"
+        android:layout_toRightOf="@id/artist_image_view"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
 
         <TextView
-            android:id="@+id/track_name_view"
+            android:id="@+id/track_name_text_view"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_weight="1"
@@ -50,10 +50,10 @@
             tools:text="Havana" />
 
         <TextView
-            android:id="@+id/artist_name_view"
+            android:id="@+id/artist_name_text_view"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_below="@id/track_name_view"
+            android:layout_below="@id/track_name_text_view"
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
